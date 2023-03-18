@@ -16,6 +16,8 @@ button.addEventListener('click', function() {
     resultadoMayusculas.textContent = texto;
 });
 
+//Success
+
 
 
 
