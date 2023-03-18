@@ -1,0 +1,98 @@
+/* style.css */
+
+body {
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ced4da;
+    border-radius: 0.25em;
+    outline: none;
+    position:relative
+}
+
+input[type="text"]:focus {
+    border-color: #495057;
+    box-shadow: none;
+    border-width: 4px; /* Increase the border width */
+    animation: borderGradient 3s ease infinite;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-image: linear-gradient(135deg, #6EE7B7 0%, #2fcb92 100%);
+    text-decoration: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-image: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* style.css */
+
+/* Add these new classes */
+.flashy {
+    animation: flashing 1s linear infinite;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.red-flashy {
+    animation: redFlashing 1s linear infinite;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Add these keyframes */
+@keyframes flashing {
+    0% { background-color: rgba(104, 255, 171, 0.5); }
+    50% { background-color: rgba(104, 255, 171, 1); }
+    100% { background-color: rgba(104, 255, 171, 0.5); }
+}
+
+@keyframes redFlashing {
+    0% { background-color: rgba(255, 104, 104, 0.5); }
+    50% { background-color: rgba(255, 104, 104, 1); }
+    100% { background-color: rgba(255, 104, 104, 0.5); }
+}
+@keyframes borderGradient {
+    0% { border-image: linear-gradient(90deg, #6EE7B7, #2fcb92); border-image-slice: 1; }
+    50% { border-image: linear-gradient(90deg, #30cfd0, #330867); border-image-slice: 1; }
+    100% { border-image: linear-gradient(90deg, #6EE7B7, #2fcb92); border-image-slice: 1; }
+}
+

@@ -11,10 +11,19 @@ button.addEventListener('click', function() {
     }
     //Conditionals to evaluate if the word texto is a palindrome or not
     if(backwardsTexto === texto){
-        return resultado.textContent = `La palaba ${input.value}, es un palindromo`
+        resultado.textContent = `La palaba ${input.value}, es un palindromo`
+        resultado.classList.remove("red-flashy");
+        resultado.classList.add("flashy");
      }else{
-         return resultado.textContent = `La palabra ${input.value}, no es un palindromo`
+        resultado.textContent = `La palabra ${input.value}, no es un palindromo`
+        resultado.classList.remove("flashy");
+        resultado.classList.add("red-flashy");
     }     
+    // Remove flashy or red flashy lights after 5 seconds
+    setTimeout(() => {
+        resultado.classList.remove("flashy");
+        resultado.classList.remove("red-flashy");
+    }, 5000);
     
 });
 
