@@ -11,11 +11,11 @@ button.addEventListener('click', function() {
     }
     //Conditionals to evaluate if the word texto is a palindrome or not
     if(backwardsTexto === texto){
-        resultado.textContent = `La palaba ${input.value}, es un palindromo`
+        resultado.textContent = `La palaba ${input.value}😎, es un palindromo✅`
         resultado.classList.remove("red-flashy");
         resultado.classList.add("flashy");
      }else{
-        resultado.textContent = `La palabra ${input.value}, no es un palindromo`
+        resultado.textContent = `La palabra ${input.value}😩, no es un palindromo❌`
         resultado.classList.remove("flashy");
         resultado.classList.add("red-flashy");
     }     
