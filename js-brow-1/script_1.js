@@ -6,7 +6,7 @@ const resultadoMayusculas = document.querySelector('#resultadoMayusculas');
 
 
 input.addEventListener('input', function() {
-    const texto = input.value// Código para convertir el texto a mayúsculas y mostrarlo en el párrafo
+    const texto = input.value.toUpperCase()// Código para convertir el texto a mayúsculas y mostrarlo en el párrafo
     resultado.textContent = texto// Código para mostrar el texto en el párrafo
     
 });
